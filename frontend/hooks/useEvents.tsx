@@ -1,28 +1,14 @@
-import { useEffect, useState } from 'react'
+import { fetcher } from "@/lib/api";
+import useSWR from "swr";
 
 export default async function useEvents() {
-    const [events, setEvents] = useState([])
-    const controller = new AbortController()
-    const { signal } = controller
+   const url = `${process.env.PUBLIC_STRAPI_URL}/events`;
+   const { data, error, isLoading, mutate } = await useSWR(url, fetcher);
 
-    const fetchEvents = async () => {
-        try {
-            const res = await fetch(`${process.env.PUBLIC_STRAPI_URL}/events`, { signal })
-            const data = await res.json();
-    
-            setEvents(data)
-        } catch (error) {
-            console.log(error)
-        }
-    }
-
-    useEffect(() => {
-        fetchEvents()
-
-        return () => controller.abort()
-    }, [])
-
-    return {
-        events
-    }
+   return {
+      data,
+      error,
+      isLoading,
+      mutate,
+   };
 }
