@@ -22,7 +22,7 @@ export default function Events({ events }: PostDataResponse) {
 
 export async function getServerSideProps() {
    const eventsResponse = await fetcher(
-      `${process.env.NEXT_PUBLIC_STRAPI_URL}/events?populate=*`
+      `${process.env.NEXT_PUBLIC_STRAPI_URL}/events?populate=*&sort=date:ASC`
    );
 
    return {

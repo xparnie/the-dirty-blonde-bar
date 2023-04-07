@@ -15,7 +15,7 @@ export default function Menu() {
                   <h1 className="text-4xl mb-4 underline underline-offset-8">
                      {title}
                   </h1>
-                  {subtitle && <h2 className="text-xl mb-4">{subtitle}</h2>}
+                  {subtitle && <h2 className="text-2xl mb-4">{subtitle}</h2>}
                   <ul className="px-8 space-y-2">
                      {items.map(({ name, price, description }, index) => (
                         <li key={`item-${index}`}>
@@ -24,7 +24,7 @@ export default function Menu() {
                               <span>${price}</span>
                            </div>
                            {description && (
-                              <div className="mt-3 text-xl text-left italic">
+                              <div className="mt-1 text-xl text-left italic">
                                  <span>{description}</span>
                               </div>
                            )}

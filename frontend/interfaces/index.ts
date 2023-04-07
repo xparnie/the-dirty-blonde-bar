@@ -3,6 +3,8 @@ export interface Event {
    description: string;
    date: string;
    media?: MediaDataResponse;
+   url?: string;
+   location?: string;
    createdAt: string;
    updatedAt: string;
    publishedAt: string;
