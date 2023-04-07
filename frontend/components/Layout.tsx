@@ -11,7 +11,7 @@ const Layout: React.FC<{
       <>
          <div
             className={`w-full m-auto flex flex-col items-center justify-center min-h-screen opening-box-animate-paddin text-black overflow-hidden md:overflow-visible`}
-            style={{ maxWidth: "1400px" }}
+            style={{ maxWidth: "1536px" }}
          >
             <Head>
                <title>The Dirty Blonde Bar and Grill</title>
@@ -26,7 +26,7 @@ const Layout: React.FC<{
             <main className="w-full flex-1 text-center">
                <Navbar currentPage={currentPage} />
 
-               <div className="container h-full mx-auto max-w-7xl mt-[115px] mb-[25px] sm:mb-[50px]">
+               <div className="container h-full mx-auto max-w-screen-2xl mt-[115px] mb-[25px] sm:mb-[50px]">
                   {children}
                </div>
 

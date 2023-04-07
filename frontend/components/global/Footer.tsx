@@ -9,7 +9,7 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ currentPage }) => {
    return (
       <footer className="bg-white dark:bg-gray-900 sm:mx-6">
-         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+         <div className="w-full max-w-screen-2xl mx-auto p-4 md:py-8">
             <div className="flex flex-col sm:flex-row items-center sm:justify-between">
                <Link
                   href={"/"}
@@ -19,11 +19,11 @@ const Footer: React.FC<FooterProps> = ({ currentPage }) => {
                      className="mr-3"
                      src="/assets/logo_text_black.png"
                      alt="Dirty Blonde Bar Logo"
-                     width="175"
-                     height="175"
+                     width="200"
+                     height="200"
                   />
                </Link>
-               <ul className="flex flex-col items-center sm:items-end space-y-3 mb-6 text-sm font-medium text-gray-500 sm:mb-0">
+               <ul className="flex flex-col items-center sm:items-end space-y-3 mb-6 text-md font-medium text-gray-500 sm:mb-0">
                   <li>
                      <Link
                         className="flex items-center text-[#000A1F] hover:text-slate-800"

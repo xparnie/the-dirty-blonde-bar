@@ -19,7 +19,7 @@ const UpcomingEvents: React.FC<PostDataResponse> = ({
                   Upcoming Events
                </h2>
             </div>
-            <div className="flex flex-col space-y-5 mb-8">
+            <div className="flex flex-col space-y-7 mb-8">
                {events &&
                   events.slice(0, 3).map(({ id, attributes }) => (
                      <Link

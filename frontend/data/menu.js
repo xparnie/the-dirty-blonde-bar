@@ -257,7 +257,7 @@ export const menuData = [
             price: 10,
          },
          {
-            name: "Loaded Omelet with Toast",
+            name: "Loaded Omelet w/ Toast",
             price: 12,
             description: "(Ham, Cheese, Mushroom, and Onion)",
          },

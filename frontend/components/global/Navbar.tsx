@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage }) => {
 
    return (
       <nav className="fixed left-0 top-0 w-full ease-in duration-300 bg-bg z-50">
-         <div className="max-w-screen-xl m-auto flex justify-between items-center px-8 sm:px-2 py-6 h-[115px]">
+         <div className="max-w-screen-2xl m-auto flex justify-between items-center px-8 sm:px-2 py-6 h-[115px]">
             <Link
                href="/"
                className="list-none font-bold text-lg cursor-pointer"
