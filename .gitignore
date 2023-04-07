@@ -152,3 +152,4 @@ dist
 build
 .strapi-updater.json
 
+_static
