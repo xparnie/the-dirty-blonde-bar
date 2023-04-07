@@ -1,24 +1,39 @@
 export interface Event {
-    title: string
-    description: string
-    date: string
-    createdAt: string
-    updatedAt: string
-    publishedAt: string
+   title: string;
+   description: string;
+   date: string;
+   media?: MediaDataResponse;
+   createdAt: string;
+   updatedAt: string;
+   publishedAt: string;
 }
 
 export interface Pagination {
-    page: number
-    pageSize: number
-    pageCount: number
-    total: number
+   page: number;
+   pageSize: number;
+   pageCount: number;
+   total: number;
 }
 
 export interface PostDataResponse {
-    attributes: Event
-    id: number
+   events: [
+      {
+         attributes: Event;
+         id: number;
+      }
+   ];
 }
 
-export interface PostDataResponse {
-    events: PostDataResponse[]
+export interface MediaDataResponse {
+   data?: {
+      id: number;
+      attributes?: {
+         title: string;
+         alternativeText: string;
+         caption: string;
+         width: number;
+         height: number;
+         url?: string;
+      };
+   };
 }

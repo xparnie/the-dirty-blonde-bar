@@ -1,41 +1,47 @@
+"use client";
+
 import { routes } from "@/data/global";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
-function Navbar({ currentPage }: NavbarProps) {
+interface NavbarProps {
+   currentPage: string;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ currentPage }) => {
    const [nav, setNav] = useState(false);
 
    const handleNav = () => setNav(!nav);
 
    return (
-      <nav className="fixed left-0 top-0 w-full z-10 ease-in duration-300 bg-bg">
-         <div className="max-w-[1240px] m-auto flex justify-between items-center px-8 py-4">
+      <nav className="fixed left-0 top-0 w-full ease-in duration-300 bg-bg z-50">
+         <div className="max-w-screen-xl m-auto flex justify-between items-center px-8 sm:px-2 py-6 h-[115px]">
             <Link
                href="/"
                className="list-none font-bold text-lg cursor-pointer"
             >
                <Image
-                  className="mr-3"
+                  className="mr-3 w-[175px] sm:w-[200px]"
                   src="/assets/logo_text_white.png"
                   alt="Dirty Blonde Bar Logo"
-                  width="175"
-                  height="175"
+                  width="200"
+                  height="200"
                />
             </Link>
             <ul className="hidden sm:flex">
                {routes.map(({ path, title }, index) => (
                   <li
                      key={index}
-                     className={`list-none p-4 ${
+                     className={`list-none ${
                         currentPage === title
                            ? "opacity-100"
                            : "opacity-40 hover:opacity-100 transition-opacity"
                      }`}
                   >
                      <Link
-                        className="text-white hover:text-slate-300"
+                        className="py-4 px-6 text-xl text-white hover:text-slate-300"
                         href={path}
                      >
                         {title}
@@ -46,9 +52,9 @@ function Navbar({ currentPage }: NavbarProps) {
 
             <div onClick={handleNav} className="block sm:hidden z-10">
                {nav ? (
-                  <AiOutlineClose size={20} className="text-white" />
+                  <AiOutlineClose size={25} className="text-white" />
                ) : (
-                  <AiOutlineMenu size={20} className="text-white" />
+                  <AiOutlineMenu size={25} className="text-white" />
                )}
             </div>
             <div
@@ -87,40 +93,6 @@ function Navbar({ currentPage }: NavbarProps) {
          </div>
       </nav>
    );
-}
-
-// function Navbar({ currentPage }: NavbarProps) {
-//    return (
-//       <nav className="flex items-center justify-between">
-//          <Link href="/" className="list-none font-bold text-lg cursor-pointer">
-//             <Image
-//                className="mr-3"
-//                src="/assets/logo_text_white.png"
-//                alt="Dirty Blonde Bar Logo"
-//                width="250"
-//                height="250"
-//             />
-//          </Link>
-//          <ul className="flex items-center space-x-10">
-//             {routes.map((item, index) => (
-//                <li
-//                   key={index}
-//                   className={`list-none text-white ${
-//                      currentPage === item.title
-//                         ? "opacity-100"
-//                         : "opacity-40 hover:opacity-100 transition-opacity"
-//                   }`}
-//                >
-//                   <Link href={item.path}>{item.title}</Link>
-//                </li>
-//             ))}
-//          </ul>
-//       </nav>
-//    );
-// }
+};
 
 export default Navbar;
-
-type NavbarProps = {
-   currentPage: String;
-};

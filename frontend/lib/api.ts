@@ -1,4 +1,6 @@
 export async function fetcher(url: string) {
-   const response = await fetch(url);
-   return response.json();
+   const res = await fetch(url);
+   const data = await res.json();
+
+   return data;
 }

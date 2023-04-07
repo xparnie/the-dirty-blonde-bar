@@ -1,4 +1,4 @@
-import Event from "@/components/Event";
+import Event from "@/components/Events/Event";
 import Layout from "@/components/Layout";
 import { PostDataResponse } from "@/interfaces";
 import { fetcher } from "@/lib/api";
@@ -6,15 +6,14 @@ import { fetcher } from "@/lib/api";
 export default function Events({ events }: PostDataResponse) {
    return (
       <Layout currentPage="Events">
-         <div className="flex justify-center p-8">
+         <div className="flex justify-center pt-10">
             <h1 className="text-5xl">Events</h1>
          </div>
-         <div className="grid gap-6 lg:grid-cols-3 items-center">
+         <hr className="my-6 border-[#000a1f] sm:mx-auto lg:mb-10" />
+         <div className="md:grid grid-cols-2 gap-6 items-start">
             {events &&
                events.map(({ id, attributes }) => (
-                  <div key={id} className="w-full lg:max-w-sm">
-                     <Event {...attributes} />
-                  </div>
+                  <Event key={id} {...attributes} />
                ))}
          </div>
       </Layout>
@@ -23,7 +22,7 @@ export default function Events({ events }: PostDataResponse) {
 
 export async function getServerSideProps() {
    const eventsResponse = await fetcher(
-      `${process.env.NEXT_PUBLIC_STRAPI_URL}/events`
+      `${process.env.NEXT_PUBLIC_STRAPI_URL}/events?populate=*`
    );
 
    return {
