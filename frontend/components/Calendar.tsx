@@ -5,7 +5,10 @@ interface CalendarProps {
    flip?: boolean;
 }
 
-const Calendar: React.FC<CalendarProps> = ({ date, flip }: CalendarProps) => {
+const Calendar: React.FC<CalendarProps> = ({
+   date,
+   flip,
+}: CalendarProps): JSX.Element => {
    const flipBody =
       flip === true ? "border-[#000a1f] bg-bg" : "border-white bg-white/90";
 

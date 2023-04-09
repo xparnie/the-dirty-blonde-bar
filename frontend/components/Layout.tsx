@@ -6,7 +6,7 @@ import Navbar from "./global/Navbar";
 const Layout: React.FC<{
    currentPage: string;
    children: React.ReactNode;
-}> = ({ currentPage, children }) => (
+}> = ({ currentPage, children }): JSX.Element => (
    <>
       <div
          className={`w-full m-auto flex flex-col items-center justify-center min-h-screen opening-box-animate-paddin text-black overflow-hidden md:overflow-visible`}

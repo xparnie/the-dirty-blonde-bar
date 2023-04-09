@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Footer: React.FC = () => (
+const Footer: React.FC = (): JSX.Element => (
    <footer className="bg-white sm:mx-6">
       <div className="w-full max-w-screen-2xl mx-auto p-4 md:py-8">
          <div className="flex flex-col sm:flex-row items-center sm:justify-between">

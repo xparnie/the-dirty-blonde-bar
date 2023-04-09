@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import ownersPic from "../public/assets/owners.webp";
 
-const AboutUs: React.FC = () => (
+const AboutUs: React.FC = (): JSX.Element => (
    <>
       <Image
          className="object-cover w-full h-full"
