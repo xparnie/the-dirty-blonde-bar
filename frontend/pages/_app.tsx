@@ -15,16 +15,16 @@ const robotoCondensed = Roboto_Condensed({
    variable: "--font-roboto-condensed",
 });
 
-export default function App({ Component, pageProps }: AppProps) {
-   return (
-      <>
-         <style jsx global>{`
-            :root {
-               --font-openSans: ${openSans.style.fontFamily};
-               --font-roboto-condensed: ${robotoCondensed.style.fontFamily};
-            }
-         `}</style>
-         <Component {...pageProps} />
-      </>
-   );
-}
+const App: React.FC<AppProps> = ({ Component, pageProps }): JSX.Element => (
+   <>
+      <style jsx global>{`
+         :root {
+            --font-openSans: ${openSans.style.fontFamily};
+            --font-roboto-condensed: ${robotoCondensed.style.fontFamily};
+         }
+      `}</style>
+      <Component {...pageProps} />
+   </>
+);
+
+export default App;

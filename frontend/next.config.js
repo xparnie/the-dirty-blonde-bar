@@ -2,7 +2,6 @@
 const nextConfig = {
    reactStrictMode: true,
    images: {
-      loader: "akamai",
       remotePatterns: [
          {
             protocol: "http",
@@ -11,7 +10,7 @@ const nextConfig = {
             pathname: "/uploads/**",
          },
       ],
-      domains: ["127.0.0.1"],
+      domains: ["127.0.0.1", "res.cloudinary.com"],
    },
 };
 

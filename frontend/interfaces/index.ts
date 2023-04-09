@@ -1,4 +1,4 @@
-export interface Event {
+export interface EventProps {
    title: string;
    description: string;
    date: string;
@@ -20,7 +20,7 @@ export interface Pagination {
 export interface PostDataResponse {
    events: [
       {
-         attributes: Event;
+         attributes: EventProps;
          id: number;
       }
    ];

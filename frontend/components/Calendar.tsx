@@ -6,15 +6,13 @@ interface CalendarProps {
 }
 
 const Calendar: React.FC<CalendarProps> = ({ date, flip }: CalendarProps) => {
-   const flipBody = flip
-      ? "border-[#000a1f] bg-bg"
-      : "border-white bg-white/90";
+   const flipBody =
+      flip === true ? "border-[#000a1f] bg-bg" : "border-white bg-white/90";
 
-   const flipHead = flip
-      ? "border-[#ffffff] bg-bg"
-      : "border-[#000a1f] bg-white/90";
+   const flipHead =
+      flip === true ? "border-[#ffffff] bg-bg" : "border-[#000a1f] bg-white/90";
 
-   const flipText = flip ? "text-[#ffffff]" : "text-[#000a1f]";
+   const flipText = flip === true ? "text-[#ffffff]" : "text-[#000a1f]";
 
    return (
       <div className="min-w-20 font-medium">

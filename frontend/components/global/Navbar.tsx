@@ -10,10 +10,11 @@ interface NavbarProps {
    currentPage: string;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ currentPage }) => {
+const Navbar: React.FC<NavbarProps> = ({ currentPage }): JSX.Element => {
    const [nav, setNav] = useState(false);
-
-   const handleNav = () => setNav(!nav);
+   const handleNav = (): void => {
+      setNav(!nav);
+   };
 
    return (
       <nav className="fixed left-0 top-0 w-full ease-in duration-300 bg-bg z-50">
