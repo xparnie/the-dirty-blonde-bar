@@ -28,10 +28,7 @@ const Event: React.FC<EventProps> = ({
             {media?.data?.attributes?.url != null && (
                <Image
                   className="m-auto"
-                  src={`${
-                     // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-                     process.env.NEXT_PUBLIC_STRAPI_UPLOAD_URL
-                  }${media?.data?.attributes?.url.substring(1)}`}
+                  src={media?.data?.attributes?.url}
                   alt={`${title} - Logo`}
                   width="300"
                   height="300"
