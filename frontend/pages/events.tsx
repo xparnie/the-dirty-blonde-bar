@@ -25,7 +25,6 @@ const Events: React.FC<PostDataResponse> = ({ events }): JSX.Element => (
          <title>Events - The Dirty Blonde Bar and Grill</title>
       </Head>
       <Layout currentPage="Events">
-         <Head>title</Head>
          <PageTitle title="Events" />
          <div className="md:grid grid-cols-2 gap-6 items-start">
             {events.map(({ id, attributes }) => (
