@@ -4,14 +4,19 @@ import Hero from "@/components/Hero";
 import Hours from "@/components/Hours";
 import Layout from "@/components/Layout";
 import type { PostDataResponse } from "@/interfaces";
-import { fetcher } from "@/lib/api";
 import type { GetStaticProps } from "next";
 
 export const getStaticProps: GetStaticProps = async () => {
-   const eventsResponse = await fetcher(
+   // const eventsResponse = await fetcher(
+   //    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+   //    `${process.env.NEXT_PUBLIC_STRAPI_URL}/events?populate=*&sort=date:ASC`
+   // );
+
+   const res = await fetch(
       // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
       `${process.env.NEXT_PUBLIC_STRAPI_URL}/events?populate=*&sort=date:ASC`
    );
+   const eventsResponse = await res.json();
 
    return {
       props: {

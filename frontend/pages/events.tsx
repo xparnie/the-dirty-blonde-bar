@@ -2,15 +2,15 @@ import Event from "@/components/Events/Event";
 import Layout from "@/components/Layout";
 import PageTitle from "@/components/PageTitle";
 import type { PostDataResponse } from "@/interfaces";
-import { fetcher } from "@/lib/api";
 import type { GetStaticProps } from "next";
 import Head from "next/head";
 
 export const getStaticProps: GetStaticProps = async () => {
-   const eventsResponse = await fetcher(
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      `${process.env.NEXT_PUBLIC_STRAPI_URL!}/events?populate=*&sort=date:ASC`
+   const res = await fetch(
+      // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+      `${process.env.NEXT_PUBLIC_STRAPI_URL}/events?populate=*&sort=date:ASC`
    );
+   const eventsResponse = await res.json();
 
    return {
       props: {
