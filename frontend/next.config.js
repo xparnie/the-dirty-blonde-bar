@@ -9,6 +9,12 @@ const nextConfig = {
             port: "1337",
             pathname: "/uploads/**",
          },
+         {
+            protocol: "https",
+            hostname: `${process.env.NEXT_PUBLIC_UPLOAD_URL}`,
+            port: "1337",
+            pathname: "/uploads/**",
+         },
       ],
       domains: [
          "127.0.0.1",
