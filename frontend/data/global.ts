@@ -1,7 +1,7 @@
-type Route = {
+interface Route {
    title: string;
    path: string;
-};
+}
 
 export const routes: Route[] = [
    {

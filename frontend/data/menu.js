@@ -72,27 +72,6 @@ export const menuData = [
       ],
    },
    {
-      title: "Kids Menu (10 & under)",
-      items: [
-         {
-            name: "Hamburger w/ Fries",
-            price: 6.5,
-         },
-         {
-            name: "Grilled Cheese w/ Fries",
-            price: 6.5,
-         },
-         {
-            name: "Chicken Strip w/ Fries",
-            price: 6.5,
-         },
-         {
-            name: "Mini Corndogs w/ Fries",
-            price: 6.5,
-         },
-      ],
-   },
-   {
       title: "Burgers",
       subtitle: "(with Fries or Tots)",
       items: [
@@ -192,6 +171,27 @@ export const menuData = [
             price: 10.95,
             description:
                "Steak tossed in Southwest Sauce, Lettuce, Tomato, Onion",
+         },
+      ],
+   },
+   {
+      title: "Kids Menu (10 & under)",
+      items: [
+         {
+            name: "Hamburger w/ Fries",
+            price: 6.5,
+         },
+         {
+            name: "Grilled Cheese w/ Fries",
+            price: 6.5,
+         },
+         {
+            name: "Chicken Strip w/ Fries",
+            price: 6.5,
+         },
+         {
+            name: "Mini Corndogs w/ Fries",
+            price: 6.5,
          },
       ],
    },
