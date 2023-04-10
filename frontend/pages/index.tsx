@@ -7,16 +7,13 @@ import type { PostDataResponse } from "@/interfaces";
 import type { GetStaticProps } from "next";
 
 export const getStaticProps: GetStaticProps = async () => {
-   // const eventsResponse = await fetcher(
-   //    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-   //    `${process.env.NEXT_PUBLIC_STRAPI_URL}/events?populate=*&sort=date:ASC`
-   // );
-
    const res = await fetch(
       // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
       `${process.env.NEXT_PUBLIC_STRAPI_URL}/events?populate=*&sort=date:ASC`
    );
    const eventsResponse = await res.json();
+
+   console.log(eventsResponse);
 
    return {
       props: {
