@@ -10,7 +10,11 @@ const nextConfig = {
             pathname: "/uploads/**",
          },
       ],
-      domains: ["127.0.0.1", "res.cloudinary.com"],
+      domains: [
+         "127.0.0.1",
+         "res.cloudinary.com",
+         `${process.env.NEXT_PUBLIC_UPLOAD_URL}`,
+      ],
    },
 };
 
