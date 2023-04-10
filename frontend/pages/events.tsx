@@ -9,7 +9,7 @@ import Head from "next/head";
 export const getStaticProps: GetStaticProps = async () => {
    const eventsResponse = await fetcher(
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      `${process.env.NEXT_PUBLIC_STRAPI_URL!}/events?populate=*&sort=date:ASC`
+      `https://whale-app-4tcse.ondigitalocean.app:1337/api/events?populate=*&sort=date:ASC`
    );
 
    return {
