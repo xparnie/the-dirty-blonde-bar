@@ -19,7 +19,6 @@ export const getStaticProps: GetStaticProps = async () => {
       props: {
          events: eventsResponse.data,
       },
-      fallback: "blocking",
    };
 };
 
