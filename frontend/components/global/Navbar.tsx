@@ -1,6 +1,7 @@
 "use client";
 
 import { routes } from "@/data/global";
+import Logo from "@/public/assets/logo_text_white.png";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -18,17 +19,15 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage }): JSX.Element => {
 
    return (
       <nav className="fixed left-0 top-0 w-full ease-in duration-300 bg-bg z-50">
-         <div className="max-w-screen-2xl m-auto flex justify-between items-center px-8 sm:px-2 py-6 h-[115px]">
+         <div className="max-w-screen-2xl m-auto flex justify-between items-center px-8 sm:px-6 py-6 h-[115px]">
             <Link
                href="/"
                className="list-none font-bold text-lg cursor-pointer"
             >
                <Image
                   className="mr-3 w-[175px] sm:w-[200px]"
-                  src="/assets/logo_text_white.png"
+                  src={Logo}
                   alt="Dirty Blonde Bar Logo"
-                  width="200"
-                  height="200"
                />
             </Link>
             <ul className="hidden sm:flex">
@@ -73,7 +72,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage }): JSX.Element => {
                      >
                         <Image
                            className="mr-3"
-                           src="/assets/logo_text_white.png"
+                           src={Logo}
                            alt="Dirty Blonde Bar Logo"
                            width="250"
                            height="250"

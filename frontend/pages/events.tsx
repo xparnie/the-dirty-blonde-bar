@@ -4,6 +4,7 @@ import PageTitle from "@/components/PageTitle";
 import type { PostDataResponse } from "@/interfaces";
 import { fetcher } from "@/lib/api";
 import type { GetStaticProps } from "next";
+import Head from "next/head";
 
 export const getStaticProps: GetStaticProps = async () => {
    const eventsResponse = await fetcher(
@@ -19,14 +20,20 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 const Events: React.FC<PostDataResponse> = ({ events }): JSX.Element => (
-   <Layout currentPage="Events">
-      <PageTitle>Events</PageTitle>
-      <div className="md:grid grid-cols-2 gap-6 items-start">
-         {events.map(({ id, attributes }) => (
-            <Event key={id} {...attributes} />
-         ))}
-      </div>
-   </Layout>
+   <>
+      <Head>
+         <title>Events - The Dirty Blonde Bar and Grill</title>
+      </Head>
+      <Layout currentPage="Events">
+         <Head>title</Head>
+         <PageTitle title="Events" />
+         <div className="md:grid grid-cols-2 gap-6 items-start">
+            {events.map(({ id, attributes }) => (
+               <Event key={id} {...attributes} />
+            ))}
+         </div>
+      </Layout>
+   </>
 );
 
 export default Events;

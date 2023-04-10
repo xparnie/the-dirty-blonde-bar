@@ -1,3 +1,4 @@
+import Logo from "@/public/assets/logo_text_black.png";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -12,10 +13,11 @@ const Footer: React.FC = (): JSX.Element => (
             >
                <Image
                   className="mr-3"
-                  src="/assets/logo_text_black.png"
+                  src={Logo}
                   alt="Dirty Blonde Bar Logo"
                   width="200"
                   height="200"
+                  loading="lazy"
                />
             </Link>
             <ul className="flex flex-col items-center sm:items-end space-y-3 mb-6 text-md font-medium text-gray-500 sm:mb-0">

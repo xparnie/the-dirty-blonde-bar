@@ -1,4 +1,4 @@
-import { type EventProps } from "@/interfaces";
+import type { EventProps } from "@/interfaces";
 import Image from "next/image";
 import Link from "next/link";
 import Calendar from "../Calendar";
@@ -32,7 +32,7 @@ const Event: React.FC<EventProps> = ({
                      // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
                      process.env.NEXT_PUBLIC_STRAPI_UPLOAD_URL
                   }${media?.data?.attributes?.url.substring(1)}`}
-                  alt={title}
+                  alt={`${title} - Logo`}
                   width="300"
                   height="300"
                />

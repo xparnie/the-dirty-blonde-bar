@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import ownersPic from "../public/assets/owners.webp";
 
 const AboutUs: React.FC = (): JSX.Element => (
@@ -8,8 +7,7 @@ const AboutUs: React.FC = (): JSX.Element => (
          className="object-cover w-full h-full"
          src={ownersPic}
          alt=""
-         width={800}
-         height={800}
+         loading="lazy"
       />
       <div className="flex flex-col items-center justify-center bg-white p-10">
          <h1 className="mb-5 font-bold text-4xl md:text-5xl text-[#000A1F]">
