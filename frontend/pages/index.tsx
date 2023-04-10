@@ -9,7 +9,7 @@ import type { GetStaticProps } from "next";
 export const getStaticProps: GetStaticProps = async () => {
    const res = await fetch(
       // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-      `https://whale-app-4tcse.ondigitalocean.app/api/events?populate=*&sort=date:ASC`
+      `${process.env.NEXT_PUBLIC_STRAPI_URL}events?populate=*&sort=date:ASC`
    );
    const eventsResponse = await res.json();
 
