@@ -10,7 +10,7 @@ export function getMonth(date: string): string {
 
 export function getDay(date: string): string {
    const dateObj = new Date(date);
-   const day = dateObj.getDay();
+   const day = dateObj.getDate();
    return `${day}`;
 }
 

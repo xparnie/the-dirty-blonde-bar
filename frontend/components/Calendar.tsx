@@ -18,9 +18,9 @@ const Calendar: React.FC<CalendarProps> = ({
    const flipText = flip === true ? "text-[#ffffff]" : "text-[#000a1f]";
 
    return (
-      <div className="min-w-20 font-medium">
+      <div className="min-w-24 font-medium">
          <div
-            className={`w-20 flex-none rounded-t lg:rounded-t-none lg:rounded-l text-center shadow-lg mr-5`}
+            className={`w-24 flex-none rounded-t lg:rounded-t-none lg:rounded-l text-center shadow-lg mr-5`}
          >
             <div className="block rounded-t overflow-hidden text-center ">
                <div
