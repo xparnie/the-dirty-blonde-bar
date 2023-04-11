@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Hero: React.FC = (): JSX.Element => (
-   <div className="relative flex flex-col items-center justify-center p-4 h-[calc(100vh_-_115px)] max-h-[845px] sm:min-h-[845px] sm:h-full">
+   <section className="relative flex flex-col items-center justify-center p-4 h-[calc(100vh_-_115px)] max-h-[845px] sm:min-h-[845px] sm:h-full">
       <Image
          className="absolute max-h-[845px] w-full h-full object-cover"
          src={InternalBarPic}
@@ -26,7 +26,7 @@ const Hero: React.FC = (): JSX.Element => (
             Check Menu
          </Link>
       </div>
-   </div>
+   </section>
 );
 
 export default Hero;

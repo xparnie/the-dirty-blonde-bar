@@ -25,18 +25,18 @@ const Home: React.FC<PostDataResponse> = ({ events }): JSX.Element => (
    <Layout currentPage="Home">
       <Hero />
       <div className="grid sm:grid-cols-2 gap-0 w-screen sm:w-full">
-         <div className="w-full flex flex-col items-center justify-center bg-gray-200 text-white">
+         <section className="w-full flex flex-col items-center justify-center bg-gray-200 text-white">
             <AboutUs />
-         </div>
-         <div className="w-full flex flex-col items-center justify-center bg-bg p-10 text-left">
+         </section>
+         <section className="w-full flex flex-col items-center justify-center bg-bg p-10 text-left">
             <UpcomingEvents events={events} />
-         </div>
-         <div className="w-full flex flex-col items-center justify-center bg-bg p-10 order-last sm:order-none">
+         </section>
+         <section className="w-full flex flex-col items-center justify-center bg-bg p-10 order-last sm:order-none">
             <Hours />
-         </div>
-         <div className="w-full bg-white text-white relative">
+         </section>
+         <section className="w-full bg-white text-white relative">
             <MapsEmbed />
-         </div>
+         </section>
       </div>
    </Layout>
 );

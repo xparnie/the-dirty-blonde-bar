@@ -23,7 +23,6 @@ const App: React.FC<AppProps> = ({ Component, pageProps }): JSX.Element => (
 
          <meta name="title" content="The Dirty Blonde Bar and Grill" />
          <meta name="description" content="The Dirty Blonde Bar and Grill" />
-         <link rel="apple-touch-icon" href="../public/apple-touch-icon.png" />
       </Head>
       <style jsx global>{`
          :root {
