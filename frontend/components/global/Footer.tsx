@@ -18,6 +18,7 @@ const Footer: React.FC = (): JSX.Element => (
                   width="200"
                   height="200"
                   loading="lazy"
+                  quality={50}
                />
             </Link>
             <ul className="flex flex-col items-center sm:items-end space-y-3 mb-6 text-md font-medium text-gray-500 sm:mb-0">
