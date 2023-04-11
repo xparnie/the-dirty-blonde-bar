@@ -8,16 +8,16 @@ const UpcomingEvents: React.FC<PostDataResponse> = ({
    <>
       {events === null ? (
          <div className="mb-8">
-            <h2 className="text-4xl md:text-5xl text-white font-bold">
+            <h1 className="text-4xl md:text-5xl text-white font-bold">
                No Upcoming Events
-            </h2>
+            </h1>
          </div>
       ) : (
          <>
             <div className="mb-10">
-               <h2 className="text-4xl md:text-5xl text-white font-bold">
+               <h1 className="text-4xl md:text-5xl text-white font-bold">
                   Upcoming Events
-               </h2>
+               </h1>
             </div>
             <div className="flex flex-col space-y-7 mb-8">
                {events?.slice(0, 3).map(({ id, attributes }) => (
