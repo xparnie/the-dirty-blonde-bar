@@ -117,17 +117,6 @@ export const menuData = [
       title: "Sandwiches",
       items: [
          {
-            name: "Patty Melt",
-            price: 10.25,
-            description:
-               "Sauted Onions, American and Swiss Cheese, Special Saunce on Rye Bread",
-         },
-         {
-            name: "Reuben",
-            price: 10.25,
-            description: "Corned beef, Sauerkraut, Special Sauce, on Rye Bread",
-         },
-         {
             name: "BLT",
             price: 9.5,
             description: "Bacon, Lettuce, Tomato, Mayo on Texas Toast",
@@ -139,38 +128,9 @@ export const menuData = [
                "Bacon, Lettuce, Tomato, American and Swiss Cheese, Mayo on Texas Toast",
          },
          {
-            name: "Philly Steak",
-            price: 10.5,
-            description:
-               "Sliced beef, Onions, Bell Peppers, Swiss and American Cheese, on Texas Toast",
-         },
-         {
             name: "Fish",
             price: 7,
             description: "Tartar Sauce on a Bun",
-         },
-      ],
-   },
-   {
-      title: "Wraps",
-      items: [
-         {
-            name: "Buffalo Chicken",
-            price: 10.95,
-            description:
-               "Crispy Chicken Tossed in Buffalo Sauce, Lettuce, Onion, Served with Ranch",
-         },
-         {
-            name: "Chicken Bacon Ranch",
-            price: 10.95,
-            description:
-               "Crispy Chicken Tossed in Ranch, Lettuce, Tomato, Onion, Bacon",
-         },
-         {
-            name: "Southwest Steak",
-            price: 10.95,
-            description:
-               "Steak tossed in Southwest Sauce, Lettuce, Tomato, Onion",
          },
       ],
    },

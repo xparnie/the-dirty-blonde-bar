@@ -7,12 +7,6 @@ interface LayoutProps {
    currentPage: string;
 }
 
-export const metadata = {
-   title: "The Dirty Blonde Bar and Grill",
-   description: "A bar and grill located in Boch, MN",
-   keywords: "restaurant, bar, grill, dirty, blonde, bar and grill, boch",
-};
-
 const Layout: React.FC<LayoutProps> = ({
    currentPage,
    children,
