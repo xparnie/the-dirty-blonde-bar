@@ -11,6 +11,10 @@ const Hours: React.FC = (): JSX.Element => (
          </div>
          <ul className="flex flex-col space-y-1 w-full text-white text-xl">
             <li className="flex justify-between">
+               <span>Sunday</span>
+               <span>8 AM - 11 PM</span>
+            </li>
+            <li className="flex justify-between">
                <span>Monday</span>
                <span>Closed</span>
             </li>
@@ -33,10 +37,6 @@ const Hours: React.FC = (): JSX.Element => (
             <li className="flex justify-between">
                <span>Saturday</span>
                <span>8 AM - 1 AM</span>
-            </li>
-            <li className="flex justify-between">
-               <span>Sunday</span>
-               <span>8 AM - 11 PM</span>
             </li>
          </ul>
       </div>
