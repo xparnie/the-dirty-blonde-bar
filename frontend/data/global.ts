@@ -1,7 +1,4 @@
-interface Route {
-   title: string;
-   path: string;
-}
+import type { Hours, Route } from "@/interfaces";
 
 export const routes: Route[] = [
    {
@@ -17,11 +14,6 @@ export const routes: Route[] = [
       path: "/events",
    },
 ];
-
-interface Hours {
-   day: string;
-   time: string;
-}
 
 export const hours: Hours[] = [
    {

@@ -57,3 +57,25 @@ export interface PageTitleProps {
 export interface NavbarProps {
    currentPage: string;
 }
+
+export interface menuDataProps {
+   title: string;
+   subtitle?: string;
+   items: menuItemProps[];
+}
+
+interface menuItemProps {
+   name: string;
+   price: number;
+   description?: string;
+}
+
+export interface Route {
+   title: string;
+   path: string;
+}
+
+export interface Hours {
+   day: string;
+   time: string;
+}

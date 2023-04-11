@@ -1,4 +1,6 @@
-export const menuData = [
+import type { menuDataProps } from "@/interfaces";
+
+export const menuData: menuDataProps[] = [
    {
       title: "Appetizers",
       items: [
