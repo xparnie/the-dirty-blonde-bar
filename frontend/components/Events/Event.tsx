@@ -11,7 +11,7 @@ const Event: React.FC<EventProps> = ({
    url,
    location,
 }): JSX.Element => (
-   <div className="flex flex-col items-center justify-center">
+   <article className="flex flex-col items-center justify-center">
       <div className="w-full p-5">
          <div className="flex items-center justify-start">
             <Calendar flip date={date} />
@@ -67,7 +67,7 @@ const Event: React.FC<EventProps> = ({
             </Link>
          )}
       </div>
-   </div>
+   </article>
 );
 
 export default Event;
