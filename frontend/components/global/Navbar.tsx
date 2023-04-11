@@ -1,15 +1,12 @@
 "use client";
 
 import { routes } from "@/data/global";
+import type { NavbarProps } from "@/interfaces";
 import Logo from "@/public/assets/logo_text_white.png";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-
-interface NavbarProps {
-   currentPage: string;
-}
 
 const Navbar: React.FC<NavbarProps> = ({ currentPage }): JSX.Element => {
    const [nav, setNav] = useState(false);

@@ -39,3 +39,21 @@ export interface MediaDataResponse {
       };
    };
 }
+
+export interface LayoutProps {
+   children: React.ReactNode;
+   currentPage: string;
+}
+
+export interface CalendarProps {
+   date: string;
+   flip?: boolean;
+}
+
+export interface PageTitleProps {
+   title: string;
+}
+
+export interface NavbarProps {
+   currentPage: string;
+}

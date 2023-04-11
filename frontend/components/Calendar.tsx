@@ -1,9 +1,5 @@
+import type { CalendarProps } from "@/interfaces";
 import { getDay, getDayText, getMonth } from "@/lib/util";
-
-interface CalendarProps {
-   date: string;
-   flip?: boolean;
-}
 
 const Calendar: React.FC<CalendarProps> = ({
    date,

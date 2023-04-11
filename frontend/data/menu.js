@@ -55,23 +55,6 @@ export const menuData = [
       ],
    },
    {
-      title: "Basket Specials",
-      items: [
-         {
-            name: "Chicken Strips w/ Fries",
-            price: 9.5,
-         },
-         {
-            name: "Drummie w/ Fries",
-            price: 10.95,
-         },
-         {
-            name: "Fish Fries",
-            price: 9.5,
-         },
-      ],
-   },
-   {
       title: "Burgers",
       subtitle: "(with Fries or Tots)",
       items: [
@@ -110,6 +93,23 @@ export const menuData = [
          {
             name: "Hamburger w/ Cheese",
             price: 8.5,
+         },
+      ],
+   },
+   {
+      title: "Basket Specials",
+      items: [
+         {
+            name: "Chicken Strips w/ Fries",
+            price: 9.5,
+         },
+         {
+            name: "Drummie w/ Fries",
+            price: 10.95,
+         },
+         {
+            name: "Fish Fries",
+            price: 9.5,
          },
       ],
    },

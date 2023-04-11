@@ -1,3 +1,4 @@
+import { hours } from "@/data/global";
 import React from "react";
 
 const Hours: React.FC = (): JSX.Element => (
@@ -10,34 +11,12 @@ const Hours: React.FC = (): JSX.Element => (
             </span>
          </div>
          <ul className="flex flex-col space-y-1 w-full text-white text-xl">
-            <li className="flex justify-between">
-               <span>Sunday</span>
-               <span>8 AM - 11 PM</span>
-            </li>
-            <li className="flex justify-between">
-               <span>Monday</span>
-               <span>Closed</span>
-            </li>
-            <li className="flex justify-between">
-               <span>Tuesday</span>
-               <span>11 AM - 1 AM</span>
-            </li>
-            <li className="flex justify-between">
-               <span>Wednesday</span>
-               <span>11 AM - 1 AM</span>
-            </li>
-            <li className="flex justify-between">
-               <span>Thursday</span>
-               <span>11 AM - 1 AM</span>
-            </li>
-            <li className="flex justify-between">
-               <span>Friday</span>
-               <span>11 AM - 1 AM</span>
-            </li>
-            <li className="flex justify-between">
-               <span>Saturday</span>
-               <span>8 AM - 1 AM</span>
-            </li>
+            {hours.map(({ day, time }) => (
+               <li key={day} className="flex justify-between">
+                  <span>{day}</span>
+                  <span>{time}</span>
+               </li>
+            ))}
          </ul>
       </div>
    </>

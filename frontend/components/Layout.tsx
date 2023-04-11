@@ -1,11 +1,7 @@
+import type { LayoutProps } from "@/interfaces";
 import React from "react";
 import Footer from "./global/Footer";
 import Navbar from "./global/Navbar";
-
-interface LayoutProps {
-   children: React.ReactNode;
-   currentPage: string;
-}
 
 const Layout: React.FC<LayoutProps> = ({
    currentPage,
