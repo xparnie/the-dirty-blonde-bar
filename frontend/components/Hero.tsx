@@ -9,7 +9,7 @@ const Hero: React.FC = (): JSX.Element => (
          src={InternalBarPic}
          alt="BW Bar"
          priority
-         quality={20}
+         quality={25}
       />
       <div className="backdrop-blur-sm bg-black/50 p-8 rounded-lg md:max-w-xl">
          <h1 className="mb-4 text-4xl md:text-5xl text-white font-bold uppercase tracking-tight">

@@ -2,11 +2,10 @@
 
 import { routes } from "@/data/global";
 import type { NavbarProps } from "@/interfaces";
-import Logo from "@/public/assets/logo_text_white.png";
-import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import LogoImg from "../LogoImg";
 
 const Navbar: React.FC<NavbarProps> = ({ currentPage }): JSX.Element => {
    const [nav, setNav] = useState(false);
@@ -19,14 +18,9 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage }): JSX.Element => {
          <div className="max-w-screen-2xl m-auto flex justify-between items-center px-8 sm:px-6 py-6 h-[115px]">
             <Link
                href="/"
-               className="list-none font-bold text-lg cursor-pointer"
+               className="list-none font-bold text-lg cursor-pointer w-[175px] sm:w-[200px]"
             >
-               <Image
-                  className="mr-3 w-[175px] sm:w-[200px]"
-                  src={Logo}
-                  alt="Dirty Blonde Bar Logo"
-                  quality={55}
-               />
+               <LogoImg />
             </Link>
             <ul className="hidden sm:flex">
                {routes.map(({ path, title }, index) => (
@@ -55,12 +49,10 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage }): JSX.Element => {
                   <AiOutlineMenu size={25} className="text-white" />
                )}
             </div>
-            <div
-               className={
-                  nav
-                     ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-bg text-center ease-in duration-300"
-                     : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-bg text-center ease-in duration-300"
-               }
+            <nav
+               className={`sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-bg text-center ease-in duration-300 ${
+                  nav ? "left-0" : "left-[-100%]"
+               }`}
             >
                <ul>
                   <li>
@@ -68,12 +60,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage }): JSX.Element => {
                         href="/"
                         className="block mb-10 list-none cursor-pointer w-[225px]"
                      >
-                        <Image
-                           className="mr-3"
-                           src={Logo}
-                           alt="Dirty Blonde Bar Logo"
-                           quality={55}
-                        />
+                        <LogoImg />
                      </Link>
                   </li>
                   {routes.map(({ path, title }, index) => (
@@ -86,7 +73,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage }): JSX.Element => {
                      </li>
                   ))}
                </ul>
-            </div>
+            </nav>
          </div>
       </nav>
    );

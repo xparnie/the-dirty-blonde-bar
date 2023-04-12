@@ -1,7 +1,6 @@
 import Logo from "@/public/assets/logo_text_white.png";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const Custom404: React.FC = (): JSX.Element => (
    <div className="w-screen h-screen flex flex-col items-center justify-center bg-bg">

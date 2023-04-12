@@ -1,7 +1,6 @@
 import Logo from "@/public/assets/logo_text_black.png";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const Footer: React.FC = (): JSX.Element => (
    <footer className="bg-white sm:mx-6">
@@ -12,7 +11,6 @@ const Footer: React.FC = (): JSX.Element => (
                className="list-none font-bold text-lg cursor-pointer mb-12 sm:mb-0 block w-[175px] sm:w-[200px]"
             >
                <Image
-                  className="mr-3"
                   src={Logo}
                   alt="Dirty Blonde Bar Logo"
                   loading="lazy"

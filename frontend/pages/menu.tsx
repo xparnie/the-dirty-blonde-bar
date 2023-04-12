@@ -1,7 +1,6 @@
 import Layout from "@/components/Layout";
 import PageTitle from "@/components/PageTitle";
 import Head from "next/head";
-import React from "react";
 import { menuData } from "../data/menu";
 
 const Menu: React.FC = (): JSX.Element => (

@@ -1,5 +1,4 @@
 import type { PageTitleProps } from "@/interfaces";
-import React from "react";
 
 const PageTitle: React.FC<PageTitleProps> = ({ title }): JSX.Element => (
    <>

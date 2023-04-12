@@ -1,5 +1,3 @@
-import React from "react";
-
 const MapsEmbed: React.FC = (): JSX.Element => (
    <iframe
       className="m-0 w-full z-0"

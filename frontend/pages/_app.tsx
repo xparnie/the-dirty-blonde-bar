@@ -1,8 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import Head from "next/head";
-
 import { Open_Sans, Roboto_Condensed } from "next/font/google";
+import Head from "next/head";
 
 const openSans = Open_Sans({
    weight: ["400"],
