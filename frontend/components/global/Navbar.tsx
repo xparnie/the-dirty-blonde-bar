@@ -25,6 +25,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage }): JSX.Element => {
                   className="mr-3 w-[175px] sm:w-[200px]"
                   src={Logo}
                   alt="Dirty Blonde Bar Logo"
+                  quality={55}
                />
             </Link>
             <ul className="hidden sm:flex">
@@ -33,12 +34,12 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage }): JSX.Element => {
                      key={index}
                      className={`list-none ${
                         currentPage === title
-                           ? "opacity-100"
-                           : "opacity-40 hover:opacity-100 transition-opacity"
+                           ? "opacity-100 underline underline-offset-4"
+                           : "opacity-70 hover:opacity-100 transition-opacity"
                      }`}
                   >
                      <Link
-                        className="py-4 px-6 text-xl text-white hover:text-slate-300"
+                        className="py-4 px-6 text-xl text-white font-bold hover:text-slate-300 tracking-wider"
                         href={path}
                      >
                         {title}
@@ -65,14 +66,13 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage }): JSX.Element => {
                   <li>
                      <Link
                         href="/"
-                        className="block mb-10 list-none cursor-pointer"
+                        className="block mb-10 list-none cursor-pointer w-[225px]"
                      >
                         <Image
                            className="mr-3"
                            src={Logo}
                            alt="Dirty Blonde Bar Logo"
-                           width="250"
-                           height="250"
+                           quality={55}
                         />
                      </Link>
                   </li>

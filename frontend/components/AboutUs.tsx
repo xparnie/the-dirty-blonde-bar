@@ -8,6 +8,7 @@ const AboutUs: React.FC = (): JSX.Element => (
          src={ownersPic}
          alt=""
          loading="lazy"
+         quality={40}
       />
       <div className="flex flex-col items-center justify-center bg-white p-10">
          <h1 className="mb-5 font-bold text-4xl md:text-5xl text-[#000A1F]">

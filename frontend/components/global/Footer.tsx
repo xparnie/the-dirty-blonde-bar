@@ -9,16 +9,14 @@ const Footer: React.FC = (): JSX.Element => (
          <div className="flex flex-col sm:flex-row items-center sm:justify-between">
             <Link
                href={"/"}
-               className="list-none font-bold text-lg cursor-pointer mb-4 block"
+               className="list-none font-bold text-lg cursor-pointer mb-12 sm:mb-0 block w-[175px] sm:w-[200px]"
             >
                <Image
                   className="mr-3"
                   src={Logo}
                   alt="Dirty Blonde Bar Logo"
-                  width="200"
-                  height="200"
                   loading="lazy"
-                  quality={50}
+                  quality={45}
                />
             </Link>
             <ul className="flex flex-col items-center sm:items-end space-y-3 mb-6 text-md font-medium text-gray-500 sm:mb-0">
