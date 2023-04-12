@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ownersPic from "../public/assets/owners.webp";
+import SectionTitle from "./SectionTitle";
 
 const AboutUs: React.FC = (): JSX.Element => (
    <>
@@ -11,9 +12,7 @@ const AboutUs: React.FC = (): JSX.Element => (
          quality={40}
       />
       <div className="flex flex-col items-center justify-center bg-white p-10">
-         <h1 className="mb-5 font-bold text-4xl md:text-5xl text-[#000A1F]">
-            About Us
-         </h1>
+         <SectionTitle flip title="About Us" />
          <p className="text-lg text-left text-[#000A1F]">
             After over 25 years of daycare, Jennifer Berning purchased The Dirty
             Blonde Bar and Grill with her husband Tobey. The bar has been

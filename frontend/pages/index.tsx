@@ -2,8 +2,8 @@ import AboutUs from "@/components/AboutUs";
 import UpcomingEvents from "@/components/Events/UpcomingEvents";
 import Hero from "@/components/Hero";
 import Hours from "@/components/Hours";
-import Layout from "@/components/Layout";
 import MapsEmbed from "@/components/MapsEmbed";
+import Layout from "@/components/global/Layout";
 import type { PostDataResponse } from "@/interfaces";
 import { fetcher } from "@/lib/api";
 import type { GetStaticProps } from "next";
@@ -21,8 +21,10 @@ export const getStaticProps: GetStaticProps = async () => {
    };
 };
 
+const pageTitle = "Home";
+
 const Home: React.FC<PostDataResponse> = ({ events }): JSX.Element => (
-   <Layout currentPage="Home">
+   <Layout currentPage={pageTitle}>
       <Hero />
       <div className="grid sm:grid-cols-2 gap-0 w-screen sm:w-full">
          <section className="w-full flex flex-col items-center justify-center bg-gray-200 text-white">

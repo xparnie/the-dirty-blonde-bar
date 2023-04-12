@@ -1,6 +1,7 @@
 import EventWidget from "@/components/Events/EventWidget";
 import type { PostDataResponse } from "@/interfaces";
 import Link from "next/link";
+import SectionTitle from "../SectionTitle";
 
 const UpcomingEvents: React.FC<PostDataResponse> = ({
    events,
@@ -8,17 +9,11 @@ const UpcomingEvents: React.FC<PostDataResponse> = ({
    <>
       {events === null ? (
          <div className="mb-8">
-            <h1 className="text-4xl md:text-5xl text-white font-bold">
-               No Upcoming Events
-            </h1>
+            <SectionTitle title="No Upcoming Events" />
          </div>
       ) : (
          <>
-            <div className="mb-10">
-               <h1 className="text-4xl md:text-5xl text-white font-bold">
-                  Upcoming Events
-               </h1>
-            </div>
+            <SectionTitle title="Upcoming Events" />
             <div className="flex flex-col space-y-7 mb-8">
                {events?.slice(0, 3).map(({ id, attributes }) => (
                   <Link

@@ -10,6 +10,22 @@ export interface EventProps {
    publishedAt: string;
 }
 
+export interface EventHeaderProps {
+   title: string;
+   date: string;
+   location?: string;
+}
+
+export interface EventBodyProps {
+   title: string;
+   media?: MediaDataResponse;
+   description: string;
+}
+
+export interface EventFooterProps {
+   url?: string;
+}
+
 export interface Pagination {
    page: number;
    pageSize: number;
@@ -78,4 +94,10 @@ export interface Route {
 export interface Hours {
    day: string;
    time: string;
+}
+
+export interface SectionTitleProps {
+   title: string;
+   flip?: boolean;
+   children?: React.ReactNode;
 }
