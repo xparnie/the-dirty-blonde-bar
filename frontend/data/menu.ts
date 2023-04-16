@@ -25,7 +25,7 @@ export const menuData: menuDataProps[] = [
             price: 6.75,
          },
          {
-            name: "Japapeno Poppers",
+            name: "Jalapeño Poppers",
             price: 9.5,
          },
          {
@@ -36,7 +36,7 @@ export const menuData: menuDataProps[] = [
             name: "Wings (6)",
             price: 10,
             description:
-               "(Garlic, Paraesan, Spicy Garlic, Sweet Mustard, Buffalo, Bourbon, BBQ, Plain)",
+               "(Garlic Parmesan, Spicy Garlic, Sweet Mustard, Buffalo, Bourbon, BBQ, Plain)",
          },
          {
             name: "Mozzarella Sticks",
@@ -73,7 +73,7 @@ export const menuData: menuDataProps[] = [
          {
             name: "The Spicy Blonde",
             price: 10.5,
-            description: "Pepper Jack Cheese, Jalapenos",
+            description: "Pepper Jack Cheese, Jalapeños",
          },
          {
             name: "Mushroom and Swiss",
@@ -148,7 +148,7 @@ export const menuData: menuDataProps[] = [
             price: 6.5,
          },
          {
-            name: "Chicken Strip w/ Fries",
+            name: "Chicken Strips w/ Fries",
             price: 6.5,
          },
          {

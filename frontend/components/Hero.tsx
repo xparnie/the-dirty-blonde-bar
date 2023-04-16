@@ -1,4 +1,4 @@
-import InternalBarPic from "@/public/assets/bwbar.jpg";
+import InternalBarPic from "@/public/assets/bwbar.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,7 +9,7 @@ const Hero: React.FC = (): JSX.Element => (
          src={InternalBarPic}
          alt="BW Bar"
          priority
-         quality={25}
+         quality={20}
       />
       <div className="backdrop-blur-sm bg-black/50 p-8 rounded-lg md:max-w-xl">
          <h1 className="mb-4 text-4xl md:text-5xl text-white font-bold uppercase tracking-tight">

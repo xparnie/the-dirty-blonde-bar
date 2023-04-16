@@ -8,9 +8,7 @@ const UpcomingEvents: React.FC<PostDataResponse> = ({
 }): JSX.Element => (
    <>
       {events === null ? (
-         <div className="mb-8">
-            <SectionTitle title="No Upcoming Events" />
-         </div>
+         <SectionTitle title="No Upcoming Events" />
       ) : (
          <>
             <SectionTitle title="Upcoming Events" />
