@@ -22,7 +22,7 @@ const Calendar: React.FC<CalendarProps> = ({
                <div
                   className={`${flipHead} backdrop-blur-sm text-white py-1 border-b-2`}
                >
-                  <h1 className={`${flipText}`}>{getMonth(date)}</h1>
+                  <span className={`${flipText}`}>{getMonth(date)}</span>
                </div>
                <div
                   className={`pt-1 border-l border-r ${flipBody} backdrop-blur-sm`}
