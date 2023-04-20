@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import { Analytics } from "@vercel/analytics/react";
 import type { AppProps } from "next/app";
 import { Open_Sans, Roboto_Condensed } from "next/font/google";
 import Head from "next/head";
@@ -30,6 +31,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }): JSX.Element => (
          }
       `}</style>
       <Component {...pageProps} />
+      <Analytics />
    </>
 );
 
