@@ -17,20 +17,12 @@ export const menuData: menuDataProps[] = [
             price: 9.5,
          },
          {
-            name: "Steak Bites",
-            price: 12.5,
-         },
-         {
             name: "Onion Rings",
             price: 6.75,
          },
          {
             name: "Jalapeño Poppers",
             price: 9.5,
-         },
-         {
-            name: "Porky Fries",
-            price: 9.0,
          },
          {
             name: "Wings (6)",
@@ -53,6 +45,40 @@ export const menuData: menuDataProps[] = [
          {
             name: "Tator Teezers",
             price: 7.25,
+         },
+      ],
+   },
+   {
+      title: "Handmade Pizza",
+      items: [
+         {
+            name: "Chicken Alfredo",
+            price: 12.99,
+         },
+         {
+            name: "Margarita",
+            price: 12.99,
+         },
+         {
+            name: "Pepperoni",
+            price: 11.99,
+         },
+         {
+            name: "Sausage",
+            price: 11.99,
+         },
+         {
+            name: "Sausage and Pepperoni",
+            price: 12.99,
+         },
+         {
+            name: "Cheese",
+            price: 10.99
+         },
+         {
+            name: "Garlic Cheese Pizza Sticks",
+            price: 10.99,
+            description: "with marinara sauce",
          },
       ],
    },
@@ -222,39 +248,6 @@ export const menuData: menuDataProps[] = [
             name: "Loaded Omelet w/ Toast",
             price: 12,
             description: "(Ham, Cheese, Mushroom, and Onion)",
-         },
-      ],
-   },
-   {
-      title: "Extras",
-      items: [
-         {
-            name: "American Fries",
-            price: 4,
-         },
-         {
-            name: "Hashbrowns",
-            price: 5,
-         },
-         {
-            name: "Sausage Links",
-            price: 4,
-         },
-         {
-            name: "Bacon",
-            price: 5,
-         },
-         {
-            name: "Ham",
-            price: 4,
-         },
-         {
-            name: "Toast",
-            price: 3,
-         },
-         {
-            name: "Bloody Mary Bar",
-            price: 5,
          },
       ],
    },
