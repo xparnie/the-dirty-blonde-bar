@@ -13,72 +13,46 @@ export const menuData: menuDataProps[] = [
             price: 6,
          },
          {
-            name: "Duck Wontons",
-            price: 9.5,
+            name: "Pickle Fries",
+            price: 8.5,
          },
          {
-            name: "Onion Rings",
-            price: 6.75,
+            name: "Duck Wontons",
+            price: 10,
          },
          {
             name: "Jalapeño Poppers",
-            price: 9.5,
+            price: 10,
          },
          {
             name: "Wings (6)",
             price: 10,
-            description:
-               "(Garlic Parmesan, Spicy Garlic, Sweet Mustard, Buffalo, Bourbon, BBQ, Plain)",
+            description: "(6 boneless or bone in)",
          },
          {
             name: "Mozzarella Sticks",
-            price: 6.75,
+            price: 9,
          },
          {
             name: "Breaded Mushrooms",
-            price: 6.75,
+            price: 9,
          },
          {
             name: "Cheese Curds",
-            price: 6.75,
+            price: 9,
          },
          {
             name: "Tator Teezers",
-            price: 7.25,
-         },
-      ],
-   },
-   {
-      title: "Handmade Pizza",
-      items: [
-         {
-            name: "Chicken Alfredo",
-            price: 12.99,
+            price: 9,
          },
          {
-            name: "Margarita",
-            price: 12.99,
+            name: "Mini Tacos",
+            price: 8.5,
          },
          {
-            name: "Pepperoni",
-            price: 11.99,
-         },
-         {
-            name: "Sausage",
-            price: 11.99,
-         },
-         {
-            name: "Sausage and Pepperoni",
-            price: 12.99,
-         },
-         {
-            name: "Cheese",
-            price: 10.99
-         },
-         {
-            name: "Garlic Cheese Pizza Sticks",
-            price: 10.99,
-            description: "with marinara sauce",
+            name: "Sampler Platter",
+            price: 14,
+            description: "(Choose any 3 appetizers, exluding Duck Wontons!)",
          },
       ],
    },
@@ -88,56 +62,44 @@ export const menuData: menuDataProps[] = [
       items: [
          {
             name: "The Cowgirl",
-            price: 10.5,
+            price: 12,
             description: "Bacon, Onion Rings, BBQ Sauce",
          },
          {
             name: "The Dirty Blonde",
-            price: 10.5,
+            price: 12,
             description: "Egg, Cheese, Bacon",
          },
          {
             name: "The Spicy Blonde",
-            price: 10.5,
+            price: 12,
             description: "Pepper Jack Cheese, Jalapeños",
          },
          {
             name: "Mushroom and Swiss",
-            price: 10.5,
+            price: 12,
          },
          {
             name: "The Ditzy Blonde",
-            price: 10.5,
+            price: 12,
             description: "Lettuce, Tomato, Cheese, Mayo",
          },
          {
             name: "Bacon Cheese",
-            price: 10.5,
+            price: 11,
          },
          {
             name: "Hamburger",
-            price: 7.5,
+            price: 8,
          },
          {
             name: "Hamburger w/ Cheese",
             price: 8.5,
          },
-      ],
-   },
-   {
-      title: "Basket Specials",
-      items: [
          {
-            name: "Chicken Strips w/ Fries",
-            price: 9.5,
-         },
-         {
-            name: "Drummie w/ Fries",
-            price: 10.95,
-         },
-         {
-            name: "Fish Fries",
-            price: 9.5,
+            name: "Bourbon Burger",
+            price: 12,
+            description: "Bacon, Swiss Cheese, Bourbon Sauce",
          },
       ],
    },
@@ -146,19 +108,33 @@ export const menuData: menuDataProps[] = [
       items: [
          {
             name: "BLT",
-            price: 9.5,
+            price: 11,
             description: "Bacon, Lettuce, Tomato, Mayo on Texas Toast",
          },
          {
             name: "Chicken Sandwich",
-            price: 10.5,
+            price: 13,
             description:
                "Bacon, Lettuce, Tomato, American and Swiss Cheese, Mayo on Texas Toast",
+         },
+         {
+            name: "Grilled Ham & Cheese",
+            price: 10,
          },
          {
             name: "Fish",
             price: 7,
             description: "Tartar Sauce on a Bun",
+         },
+         {
+            name: "Crispy Chicken Bourbon",
+            price: 13,
+            description:
+               "Jalapeños, Mozzarella Cheese, Bourbon Sauce on Texas Toast",
+         },
+         {
+            name: "Chicken Ranch Wrap",
+            price: 11,
          },
       ],
    },
@@ -188,11 +164,7 @@ export const menuData: menuDataProps[] = [
       items: [
          {
             name: "Soup of the Day",
-            price: 5,
-         },
-         {
-            name: "Chili",
-            price: 6,
+            price: 6.5,
          },
       ],
    },
@@ -222,32 +194,43 @@ export const menuData: menuDataProps[] = [
       subtitle: "Saturday and Sunday Morning 8-11",
       items: [
          {
-            name: "Steak and Eggs",
-            price: 16,
-         },
-         {
             name: "Two Eggs and Toast",
             price: 9,
             description: "with Choice of Sausage, Bacon, or Ham",
          },
          {
-            name: "Two Pancakes and Eggs",
+            name: "1 Jumbo Pancake and Eggs",
             price: 9,
             description: "with Choice of Sausage, Bacon, or Ham",
          },
          {
-            name: "Two French Toast",
+            name: "2 French Toast",
             price: 10,
             description: "with Choice of Sausage, Bacon, or Ham",
          },
          {
-            name: "Ham and Cheese",
+            name: "Country Fried Steak",
+            price: 14,
+            description: "Served with 2 Eggs and Toast",
+         },
+         {
+            name: "Biscuits and Gravy",
+            price: 9,
+            description: "Serve with 2 Eggs",
+         },
+         {
+            name: "Ham and Cheese Omelet w/ Toast",
             price: 10,
          },
          {
             name: "Loaded Omelet w/ Toast",
             price: 12,
             description: "(Ham, Cheese, Mushroom, and Onion)",
+         },
+         {
+            name: "Meat Lovers Skillet",
+            price: 13,
+            description: "Ham, Sausage, Bacon, Cheese, and Hashbrowns",
          },
       ],
    },
