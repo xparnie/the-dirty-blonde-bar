@@ -14,6 +14,8 @@ export const getStaticProps: GetStaticProps = async () => {
       `${process.env.NEXT_PUBLIC_STRAPI_URL}events?populate=*&sort=date:ASC`
    );
 
+   console.log(res);
+
    return {
       props: {
          events: res.data,
