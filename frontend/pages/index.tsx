@@ -11,7 +11,7 @@ import type { GetStaticProps } from "next";
 export const getStaticProps: GetStaticProps = async () => {
    const res = await fetcher(
       // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-      `${process.env.NEXT_PUBLIC_STRAPI_URL}events?populate=*&sort=date:ASC`
+      `https://whale-app-4tcse.ondigitalocean.app/api/events?populate=*&sort=date:ASC`
    );
 
    console.log(res);
