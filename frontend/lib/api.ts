@@ -7,7 +7,7 @@ export async function fetcher<JSON = any>(url: string): Promise<JSON> {
       const data = await res.json();
       return data;
    } catch (error) {
-      console.error(`There was a problem fetching the data: ${error.message}`);
+      console.error(`There was a problem fetching the data`);
       throw error;
    }
 }
