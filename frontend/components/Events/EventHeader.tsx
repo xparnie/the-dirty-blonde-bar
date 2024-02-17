@@ -8,7 +8,7 @@ const EventHeader: React.FC<EventHeaderProps> = ({
 }): JSX.Element => (
    <header className="flex items-center justify-start">
       <Calendar flip date={date} />
-      <div>
+      <div className="ml-2 mb-0 md:ml-0 md:mb-2">
          <h1 className="md:w-3/4 text-3xl font-semibold mb-2 text-black text-left">
             {title}
          </h1>
